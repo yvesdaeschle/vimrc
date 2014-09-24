@@ -31,3 +31,4 @@ set undolevels=1000
 set backspace=indent,eol,start	
 
 imap jk <ESC>
+
