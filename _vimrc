@@ -6,6 +6,9 @@ if has("win32")
 	set shellredir=>
 endif
 
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
+
 syntax on
 set number	
 set linebreak	
@@ -28,7 +31,23 @@ set softtabstop=4
 set ruler
  
 set undolevels=1000	
-set backspace=indent,eol,start	
+"set backspace=indent,eol,start	
 
+" *********************************************************
+" Key mappings
+" leader: http://usevim.com/2012/07/20/vim101-leader/
+let mapleader=","
+
+" My mappings
+nmap <leader>; A;<ESC>
+nmap <leader>{ o{<CR>}<ESC>ko
 imap jk <ESC>
+
+" Use CTRL-S for saving, also in Insert mode
+noremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
+
+" *********************************************************
+set clipboard+=unnamed  " use the clipboards of vim and win
 
