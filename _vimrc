@@ -8,6 +8,12 @@ endif
 
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+set laststatus=2
+set noshowmode
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 syntax on
 set number	
