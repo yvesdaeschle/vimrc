@@ -44,6 +44,20 @@ set undolevels=1000
 " leader: http://usevim.com/2012/07/20/vim101-leader/
 let mapleader=","
 
+" Unmap the arrow keys
+no <down> <Nop>
+no <left> <Nop>
+no <right> <Nop>
+no <up> <Nop>
+ino <down> <Nop>
+ino <left> <Nop>
+ino <right> <Nop>
+ino <up> <Nop>
+vno <down> <Nop>
+vno <left> <Nop>
+vno <right> <Nop>
+vno <up> <Nop>
+
 " My mappings
 nmap <leader>; A;<ESC>
 nmap <leader>{ o{<CR>}<ESC>ko
