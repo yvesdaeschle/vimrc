@@ -15,7 +15,10 @@ let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
 
+execute pathogen#infect()
 syntax on
+"filetype plugin indent on
+
 set number	
 set linebreak	
 set showbreak=+++	
